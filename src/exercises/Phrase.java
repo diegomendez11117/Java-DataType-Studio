@@ -1,0 +1,20 @@
+package exercises;
+import java.util.Scanner;
+import java.lang.String;
+public class Phrase {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        java.lang.String phrase ="Alice was beginning to get very tired of sitting " +
+                "by her sister on the bank, and of having nothing to do: once or " +
+                "twice she had peeped into the book her sister was reading, but it " +
+                "had no pictures or conversations in it, 'and what is the use of a " +
+                "book,' thought Alice 'without pictures or conversation?'";
+        System.out.print("Enter the work you want to find: ");
+        java.lang.String word = input.nextLine();
+        if(phrase.contains(word)){
+            System.out.print("Si");
+        } else {
+            System.out.print("No");
+        }
+    }
+}
